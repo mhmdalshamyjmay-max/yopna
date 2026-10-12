@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="theme-color" content="#080d1b">
+  <meta name="description"
+        content="YOPNA - خدمات تطوير تطبيقات أندرويد والمواقع الإلكترونية وبوتات تيليجرام.">
+
+  <title>YOPNA | نحول أفكارك إلى مشاريع رقمية</title>
+
+  <style>
+    :root {
+      --bg: #080d1b;
+      --card: #111a2e;
+      --card-light: #17223a;
+      --primary: #8b5cf6;
+      --secondary: #22d3ee;
+      --text: #f8fafc;
+      --muted: #a5b4cc;
+      --border: rgba(255,255,255,.09);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Tahoma, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.9;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button, a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .container {
+      width: min(1100px, 92%);
+      margin: auto;
+    }
+
+    /* شريط التنقل */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(8,13,27,.94);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .navbar {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .logo {
+      font-size: 27px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      background: linear-gradient(90deg, #22d3ee, #a78bfa);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 23px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .nav-links a:hover {
+      color: var(--secondary);
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 19px;
+      border-radius: 12px;
+      font-weight: bold;
+      font-size: 14px;
+      border: 1px solid var(--border);
+      cursor: pointer;
+      transition: .25s;
+    }
+
+    .btn-primary {
+      background: linear-gradient(120deg, #7c3aed, #4f46e5);
+      color: white;
+      border: none;
+    }
+
+    .btn-outline {
+      background: rgba(255,255,255,.03);
+      color: white;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      filter: brightness(1.12);
+    }
+
+    /* الواجهة الرئيسية */
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 95px 0 85px;
+      text-align: center;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 350px;
+      height: 350px;
+      border-radius: 50%;
+      background: #6d28d9;
+      filter: blur(140px);
+      opacity: .22;
+      top: 0;
+      right: 5%;
+      pointer-events: none;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute
